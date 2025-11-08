@@ -1,0 +1,9 @@
+//combine both array's into one array and remove duplicates const 
+const Input1 = [1, 2, 3];
+const Input2 = [2, 30, 1, 5, 9];
+
+let output = [...Input2, ...Input1];
+
+output = output.filter((item, index) => output.indexOf(item) === index)
+
+console.log(JSON.stringify(output));
