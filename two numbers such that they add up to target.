@@ -1,0 +1,24 @@
+
+const nums = [2, 7, 11, 15, 16, 18, 22];
+const target = 9
+
+//Output: [0, 1]
+let initalIndex;
+let endIndex
+for (i = 0; i < nums.length; i++){
+    let element = nums[i];
+    let index = i
+    if (element < target) {
+        initalIndex = index;
+        for (j = index; j < nums.length; j++){
+            if(element + nums[j] === target) {
+                endIndex = j;
+                break;
+            }
+        }
+    }
+    if(endIndex) {
+        console.log([initalIndex, endIndex])
+        break
+    }
+}
