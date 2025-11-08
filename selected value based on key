@@ -1,0 +1,8 @@
+var selectedValue = '23456'
+var inputArray = ['12345','34567','23456','23435','65342','65675','12374','78906','45782','34097','23089','39372','10926']
+
+const currentIndex = inputArray.indexOf(selectedValue)
+
+if(currentIndex >= 0) {
+    console.log(JSON.stringify({[currentIndex]: selectedValue}))
+}
