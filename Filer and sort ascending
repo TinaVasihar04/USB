@@ -1,0 +1,11 @@
+let users = [
+{"id":1, "name" : 'AZ', "isActive":true, "age":20}, 
+{"id":2, "name":'Steve', "isActive": true, "age":48},
+{"id": 3, "name":'Vikki', "isActive": false, "age":30},
+{"id":3, "name":'Dav"id"', "isActive": true, "age": 11} 
+]
+
+
+let result = users.filter(element => element.isActive == true).sort((a,b) => a.age - b.age)
+    
+console.log(result)
