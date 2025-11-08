@@ -1,0 +1,13 @@
+// NO of occurenaces
+let a = [1, 2, 3, 4, 4, 3, 3, 4]
+let occuranceObj = {}
+
+a.forEach((e) => {
+    if(occuranceObj[e]) {
+        occuranceObj[e] = occuranceObj[e] + 1
+    } else {
+        occuranceObj[e] = 1
+    }
+})
+
+console.log(JSON.stringify(occuranceObj))
