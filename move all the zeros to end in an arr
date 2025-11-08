@@ -1,0 +1,15 @@
+/// sort the array move all the zeros to end and retain the other number order
+let arr = [5,0,1,0,-3,0,4,6]
+let temp = 0;
+for (let i =0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+        for (let j = i; j < arr.length; j++) {
+            if(arr[j] === 0 && (j+1) < arr.length) {
+                temp = arr[j+1]
+                arr[j+1] = arr[j]
+                arr[j] = temp 
+            }
+        }
+    }
+}
+console.log(JSON.stringify(arr))
